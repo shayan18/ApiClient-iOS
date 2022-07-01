@@ -45,8 +45,4 @@ extension VehicleEndpoint: Endpoint {
   public var decoder: JSONDecoder {
     JSONDecoder()
   }
-
-  public var encoder: JSONEncoder {
-    JSONEncoder()
-  }
 }

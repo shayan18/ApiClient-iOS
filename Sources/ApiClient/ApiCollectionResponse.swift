@@ -11,5 +11,4 @@
 public struct ApiCollectionResponse<T: Decodable & Equatable>: Decodable, Equatable {
   /// The responses 'primary data' where the expected data type differs from endpoint to endoint, thus it's provided as a generic type. Required.
   public let data: [Resource<T>]
-
 }

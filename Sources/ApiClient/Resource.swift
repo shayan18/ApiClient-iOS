@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Resource.swift
 //  
 //
 //  Created by Shayan Ali on 01.07.22.
