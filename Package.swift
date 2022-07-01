@@ -5,17 +5,22 @@ import PackageDescription
 
 let package = Package(
     name: "ApiClient",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "ApiClient",
             targets: ["ApiClient"]),
     ],
     dependencies: [
+      // Micro version of the Moya network abstraction layer written in Swift.
+      .package(url: "https://github.com/Flinesoft/Microya.git", branch: "main")
     ],
     targets: [
         .target(
             name: "ApiClient",
-            dependencies: []),
+            dependencies: [
+              .product(name: "Microya", package: "Microya"),
+            ]),
         .testTarget(
             name: "ApiClientTests",
             dependencies: ["ApiClient"]),
