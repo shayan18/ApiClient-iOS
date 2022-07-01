@@ -8,7 +8,7 @@
 import Foundation
 
 /// The base resource object structure defined in JSON:API specification. See https://jsonapi.org/format/#document-resource-objects.
-public struct Resource<ResourceType: Decodable & Equatable>: ResourceObject, Equatable, Identifiable {
+public struct Resource<ResourceType: Decodable & Equatable>: Decodable {
   /// The unique identifier for the given object. Required.
   public let id: String
 
