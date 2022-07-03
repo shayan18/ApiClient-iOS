@@ -10,7 +10,6 @@ import MapKit
 
 // MARK: - Vehicle
 public class Vehicle: NSObject, Decodable {
-
   public let batteryLevel: Int
   public let lat: Double
   public let lng: Double
