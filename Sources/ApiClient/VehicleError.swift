@@ -7,14 +7,15 @@
 
 import Foundation
 
+/// Represents a single error with some additional information on what's wrong.
 public struct VehicleError: Decodable, Equatable {
-  /// Represents a single error with some additional information on what's wrong.
+  public let status: Int
 
-    /// The status codes string representation for easier debugging.
-    public let status: String
+  public let title: String
 
-    /// The localized title to be shown to the user if error not otherwise handled.
-    public let title: String
-  }
+  public let traceId: String
+
+  public let type: String
+}
 
 
